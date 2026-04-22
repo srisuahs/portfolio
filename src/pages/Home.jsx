@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import profile from "../assets/profile.jpg";
 
 export default function Home() {
@@ -41,15 +42,14 @@ export default function Home() {
               <p><span className="text-lime-400">College Email:</span> se23uari093@mahindrauniversity.edu.in</p>
             </div>
 
+            {/* FIXED BUTTON */}
             <div className="flex gap-4">
-              <a
-                href="/#/projects"
+              <Link
+                to="/projects"
                 className="bg-lime-400 text-black px-6 py-3 rounded-lg font-bold hover:bg-lime-300 transition"
               >
                 View Projects
-              </a>
-
-              
+              </Link>
             </div>
           </div>
 
@@ -136,6 +136,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CONTACT */}
       <section id="contact" className="py-20 px-6 border-t border-gray-800">
         <div className="max-w-6xl mx-auto text-center">
 
